@@ -6,7 +6,7 @@ resource "aws_instance" "jenkins_master" {
   vpc_security_group_ids = [aws_security_group.jenkins_sg.id]
   subnet_id              = aws_subnet.andynze_public_subnet_01.id
   tags = {
-    name = "Jenkins-Sonar-Server"
+    Name = "Jenkins-Sonar-Server"
   }
 
   root_block_device {
