@@ -17,3 +17,7 @@ output "jenkins_instance_id" {
   description = "The ID of the Jenkins instance."
   value       = aws_instance.jenkins_master.id
 }
+
+output "public_ip_jenkins" {
+  value = aws_instance.jenkins_master.public_ip
+}
